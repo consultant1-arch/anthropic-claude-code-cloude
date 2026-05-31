@@ -1,0 +1,339 @@
+{
+  "schema_version": "2.3",
+  "pack_date": "2026-05-31",
+  "status": "WORKING DRAFT — NOT SAFE FOR AQUILA INGESTION",
+  "safe_for_aquila_ingestion": false,
+  "reason_not_safe": "FOS decision PDFs and HTML pages returned HTTP 403 (access blocked). Source verification limited to web search snippet data. Approximately 29 of 85 candidate DRNs could not be source-verified. Candidate universe materially incomplete — approximately 400+ decisions known on FOS website but only 85 captured due to network access restrictions.",
+  "lender": {
+    "legal_name": "Lendable Ltd",
+    "lender_slug": "lendable",
+    "trading_names": [
+      "Lendable",
+      "Zable",
+      "Autolend"
+    ],
+    "fca_authorised": true,
+    "underwriting_model": "Digital / online",
+    "sentinel_drns": []
+  },
+  "product_eras": [
+    {
+      "era_id": "ERA-PL-1",
+      "product_canonical": "Personal / unsecured loan",
+      "classification_group": "Fixed-sum credit",
+      "trading_name": "Lendable",
+      "product_md_filename": "lendable__personal_unsecured_loan.md",
+      "lending_events": [
+        "New loan",
+        "Repeat loan"
+      ],
+      "product_subtypes": [
+        "Standard personal loan",
+        "Repeat personal loan"
+      ],
+      "underwriting_date_from": "c. January 2018",
+      "underwriting_date_to": "c. December 2020",
+      "confidence": "Low",
+      "checks_used": [
+        "CRA income verification (online tool)",
+        "Credit check",
+        "Declared income and expenditure"
+      ],
+      "data_sources": [
+        "CRA data",
+        "Credit file",
+        "Online income verification tool"
+      ],
+      "bank_statement_position": "Not expected for lower-value loans. Ambiguous for larger amounts. No bank statements routinely requested.",
+      "bank_statement_tags": [
+        "LENDER_USED_CRA_DATA",
+        "LENDER_USED_CRA_INCOME_VERIFICATION",
+        "FOS_DID_NOT_REQUIRE_BANK_STATEMENTS"
+      ],
+      "di_buffer": {
+        "adequate_range_gbp_per_month": "724.47 and above (single data point)",
+        "inadequate_range_gbp_per_month": "Not identified for this era",
+        "grey_zone": "Not identified for this era",
+        "confidence": "Low — limited data points"
+      },
+      "key_drns": [
+        "DRN-5290895",
+        "DRN-5252228",
+        "DRN-3388678",
+        "DRN-4814599"
+      ],
+      "argument_modules": [
+        "AM-PL-DEF-01"
+      ],
+      "notes": "Era 1 defined from earliest confirmed lending date (January 2018, DRN-5290895). Boundary with ERA-PL-2 approximate."
+    },
+    {
+      "era_id": "ERA-PL-2",
+      "product_canonical": "Personal / unsecured loan",
+      "classification_group": "Fixed-sum credit",
+      "trading_name": "Lendable",
+      "product_md_filename": "lendable__personal_unsecured_loan.md",
+      "lending_events": [
+        "New loan",
+        "Repeat loan"
+      ],
+      "product_subtypes": [
+        "Standard personal loan",
+        "Debt consolidation loan",
+        "Repeat personal loan"
+      ],
+      "underwriting_date_from": "c. January 2021",
+      "underwriting_date_to": "c. December 2022",
+      "confidence": "Low",
+      "checks_used": [
+        "CRA income verification (online tool or automated)",
+        "Credit check",
+        "Declared income and expenditure",
+        "Open banking (emerging, not universal)"
+      ],
+      "data_sources": [
+        "CRA data",
+        "Credit file",
+        "Online income verification tool",
+        "Open banking (some cases)"
+      ],
+      "bank_statement_position": "Conditional. Expected for higher-risk cases (high existing debt, repeat borrowing, adverse credit, larger amounts). Not universally required for lower-risk standard loans.",
+      "bank_statement_tags": [
+        "LENDER_USED_CRA_DATA",
+        "LENDER_USED_CRA_INCOME_VERIFICATION",
+        "BANK_STATEMENT_POSITION_AMBIGUOUS",
+        "FOS_EXPECTED_TRANSACTION_LEVEL_DATA"
+      ],
+      "di_buffer": {
+        "adequate_range_gbp_per_month": "Approximately 500 and above (with positive debt consolidation benefit demonstrated)",
+        "inadequate_range_gbp_per_month": "84 to 111 or below",
+        "grey_zone": "112 to 499 — insufficient data to characterise",
+        "confidence": "Low — only 4 data points across ERA-PL-1 and ERA-PL-2"
+      },
+      "key_drns": [
+        "DRN-3388217",
+        "DRN-5369927",
+        "DRN-5470166",
+        "DRN-5939888",
+        "DRN-5488975",
+        "DRN-5498270",
+        "DRN-5735269",
+        "DRN-4334156",
+        "DRN-5724292",
+        "DRN-4348631",
+        "DRN-4836857",
+        "DRN-5650867",
+        "DRN-5937331",
+        "DRN-5090740"
+      ],
+      "argument_modules": [
+        "AM-PL-01",
+        "AM-PL-02",
+        "AM-PL-03",
+        "AM-PL-04",
+        "AM-PL-05",
+        "AM-PL-DEF-01",
+        "AM-PL-DEF-02"
+      ],
+      "upheld_decisions": [
+        {
+          "drn": "DRN-5488975",
+          "key_issue": "DI approximately 111 per month — debt consolidation — cycle of borrowing",
+          "outcome": "Upheld"
+        },
+        {
+          "drn": "DRN-5498270",
+          "key_issue": "DI approximately 84 per month — credit cards at limit — secured loan arrears — Oct 2022",
+          "outcome": "Upheld"
+        },
+        {
+          "drn": "DRN-3388678",
+          "key_issue": "Essential expenditure not enquired about — two prior recent loans — Oct 2020",
+          "outcome": "Upheld"
+        },
+        {
+          "drn": "DRN-4348631",
+          "key_issue": "Approximately 20000 gambling transactions in application month — Jul 2022",
+          "outcome": "Upheld"
+        },
+        {
+          "drn": "DRN-4836857",
+          "key_issue": "Repeat lending — loans 2 to 4 — inadequate re-assessment",
+          "outcome": "Partly upheld"
+        },
+        {
+          "drn": "DRN-5650867",
+          "key_issue": "Repeat lending — loan 3 unaffordable",
+          "outcome": "Partly upheld"
+        }
+      ],
+      "notes": "Open banking transition within ERA-PL-2 not precisely dated. Boundary dates are indicative."
+    },
+    {
+      "era_id": "ERA-PL-3",
+      "product_canonical": "Personal / unsecured loan",
+      "classification_group": "Fixed-sum credit",
+      "trading_name": "Lendable",
+      "product_md_filename": "lendable__personal_unsecured_loan.md",
+      "lending_events": [
+        "New loan"
+      ],
+      "product_subtypes": [
+        "Standard personal loan"
+      ],
+      "underwriting_date_from": "c. 2022",
+      "underwriting_date_to": "c. August 2025",
+      "confidence": "Very low — one verified decision only",
+      "checks_used": [
+        "Open banking data",
+        "CRA income verification"
+      ],
+      "data_sources": [
+        "CRA data",
+        "Credit file",
+        "Open banking"
+      ],
+      "bank_statement_position": "Open banking obtained. FOS expected it to be adequately analysed including for gambling indicators.",
+      "bank_statement_tags": [
+        "LENDER_OBTAINED_OPEN_BANKING",
+        "FOS_EXPECTED_TRANSACTION_LEVEL_DATA"
+      ],
+      "di_buffer": {
+        "adequate_range_gbp_per_month": "Not stated",
+        "inadequate_range_gbp_per_month": "Not stated",
+        "grey_zone": "Not stated",
+        "confidence": "No data — single decision with no DI figure"
+      },
+      "key_drns": [
+        "DRN-6025908"
+      ],
+      "argument_modules": [
+        "AM-PL-03"
+      ],
+      "upheld_decisions": [
+        {
+          "drn": "DRN-6025908",
+          "key_issue": "Open banking obtained — gambling present but not identified — Aug 2025",
+          "outcome": "Upheld"
+        }
+      ],
+      "notes": "Only one verified decision from this era. Do not rely on ERA-PL-3 findings without further source-verified decisions."
+    },
+    {
+      "era_id": "ERA-CC-1",
+      "product_canonical": "Credit card",
+      "classification_group": "Running-account credit",
+      "trading_name": "Zable",
+      "product_md_filename": "lendable__credit_card_zable.md",
+      "lending_events": [
+        "New loan",
+        "Top-up (CLI)"
+      ],
+      "product_subtypes": [
+        "Opening credit limit",
+        "Credit-limit increase"
+      ],
+      "underwriting_date_from": "c. June 2021",
+      "underwriting_date_to": "c. March 2022 (from verified decisions — actual end date unknown)",
+      "confidence": "Low — only 3 verified decisions, all not upheld",
+      "checks_used": [
+        "CRA income verification",
+        "External income verification",
+        "Credit check"
+      ],
+      "data_sources": [
+        "CRA data",
+        "Credit file",
+        "External income verification source"
+      ],
+      "bank_statement_position": "Not expected for initial limits of 200 to 800. Not required for CLIs within overall 800 limit.",
+      "bank_statement_tags": [
+        "LENDER_USED_CRA_DATA",
+        "LENDER_USED_CRA_INCOME_VERIFICATION",
+        "FOS_DID_NOT_REQUIRE_BANK_STATEMENTS"
+      ],
+      "di_buffer": {
+        "adequate_range_gbp_per_month": "Not applicable — no DI data for credit card decisions",
+        "inadequate_range_gbp_per_month": "Not applicable",
+        "grey_zone": "Not applicable",
+        "confidence": "No data"
+      },
+      "key_drns": [
+        "DRN-4506345",
+        "DRN-4195852",
+        "DRN-4524178"
+      ],
+      "argument_modules": [
+        "AM-CC-01",
+        "AM-CC-02"
+      ],
+      "upheld_decisions": [],
+      "notes": "All 3 verified decisions not upheld. 6 borderline Zable decisions not source-verified. Position for limits above 800 unknown. Do not use to assert gambling is never relevant to Zable complaints."
+    },
+    {
+      "canonical_product": "Motor finance",
+      "classification_group": "Goods and services finance",
+      "product_subtype": "Hire purchase",
+      "trading_name": "Autolend",
+      "product_mapping_confidence": "HIGH",
+      "product_mapping_requires_human_review": false,
+      "underwriting_era": "Insufficient data",
+      "date_range": "Not determinable",
+      "known_lender_checks": "Not determinable from available data",
+      "bank_statement_position": "Not determinable",
+      "di_buffer_ranges": "Not determinable",
+      "strongest_claimant_arguments": [],
+      "strongest_lender_defence_points": [
+        "DRN-4751775: Autolend carried out proportionate checks (not upheld)"
+      ],
+      "minimum_viable_evidence": [
+        "loan agreement",
+        "credit report",
+        "DSAR affordability assessment"
+      ],
+      "ideal_evidence_pack": [
+        "loan agreement",
+        "credit report",
+        "DSAR affordability assessment",
+        "DSAR CRA output",
+        "bank statements"
+      ],
+      "dsar_targets": [
+        "affordability assessment",
+        "CRA search output",
+        "income verification record"
+      ],
+      "do_not_plead": [
+        "All irresponsible lending arguments for Autolend hire purchase require human review — evidence base insufficient"
+      ],
+      "human_review_triggers": [
+        "All Autolend hire purchase cases — mandatory human review before letter drafting"
+      ],
+      "supporting_drns": [
+        "DRN-4751775"
+      ],
+      "counterexample_drns": [
+        "DRN-4751775"
+      ],
+      "confidence": "LOW",
+      "limitations": "Only 1 irresponsible lending FOS decision found. 13 of 14 Autolend decisions concern vehicle quality. Insufficient evidence base for any argument module."
+    }
+  ],
+  "crm_taxonomy_reference": {
+    "Credit card": "Running-account credit",
+    "Overdraft": "Running-account credit",
+    "Catalogue / store account": "Running-account credit",
+    "Personal / unsecured loan": "Fixed-sum credit",
+    "Payday / short-term instalment loan": "High-cost credit",
+    "Home credit / doorstep loan": "High-cost credit",
+    "Logbook loan": "High-cost credit",
+    "Guarantor loan": "Guarantor lending",
+    "Motor finance": "Goods and services finance",
+    "Retail / point-of-sale finance": "Goods and services finance",
+    "BNPL / deferred payment credit": "Deferred payment credit",
+    "Secured loan / second-charge mortgage": "Secured lending",
+    "Residential mortgage": "Specialist manual review",
+    "Business lending - FOS-eligible only": "Specialist manual review",
+    "Other lending product / manual review": "Specialist manual review"
+  }
+}

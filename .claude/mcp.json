@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "browserbase": {
+      "command": "npx",
+      "args": [
+        "@browserbasehq/mcp-browserbase"
+      ],
+      "env": {
+        "BROWSERBASE_API_KEY": "bb_live_L1OAEOg5GjUvTHK690qx8i7exqs",
+        "BROWSERBASE_PROJECT_ID": "b823af84-effe-44a3-9f58-853e09bcf761"
+      }
+    }
+  }
+}
