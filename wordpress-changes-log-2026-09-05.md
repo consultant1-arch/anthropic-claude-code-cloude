@@ -125,6 +125,23 @@ Current guidance emphasises: E-E-A-T signals now gate competitive rankings, espe
 
 Method: each insertion anchored to exact existing text, so a phrase already inside a link cannot match, which prevented double linking (the "How to Challenge" guide was correctly skipped for already linking to the hub). Deliberately skipped: the formal CP25/27 consultation response, the DSAR explainer, the customer support notice, two opinion essays with no natural anchor, the second charge mortgages post (no mortgage hub exists) and the FSCS explainer. If a mortgage claims hub page is ever created, the second charge post should link to it.
 
+### Fifth wave: car finance commission section fixes and further alt text (live)
+
+Car finance commission hub (/car-finance-claims/):
+- Linked the previously dead "reading our blog here" reference to the final rules explainer, and linked the FCA policy statement mention to PS26/3.
+- Corrected the outdated Key Facts bullet (was "14 million agreements, proposed scheme"; now the final rules figure of 12.1 million, confirmed scheme).
+- Corrected "The FCA is consulting on a potential redress scheme" to reflect the confirmed scheme and the 2 July 2026 partial suspension, keeping the message that consumers can and should still complain now.
+- Set an excerpt (search snippet) carrying the claims management company disclosure. Same for the DCA page and the Unfair Commission page.
+
+Unfair Commission page (/car-finance-claims/unfair-commission-claims-car-finance/):
+- Fixed a staging domain leak: the fees link pointed at staging.allegiant.co.uk and now points at the live /commission-claim-fees/ page.
+- Fixed the title typo ("Car Finance ?" to "Car Finance?").
+- Corrected "is consulting on a compensation scheme, but this won't begin until 2026 and details remain unclear" to reflect the confirmed scheme and the tribunal suspension.
+
+Further prudent alt text (18 images): MotoNovo, Black Horse commission and second charge mortgage images, the two accident scene photos on the DVLA post, the GDPR image on the DSAR post, two family images on lending pages, social icons (LinkedIn, X, Facebook x2, YouTube), Trustpilot logo and a second "4 starts" typo fix, and the two PCP icons that carried filename alts. Decorative icon sets were deliberately left with empty alt text, which is correct accessibility practice.
+
+Team notes: the hub page embeds an H1 in its body ("Car Finance Redress | Genuine No Win, No Fee*") which may duplicate the template H1, and footnote 2 on the hub still cites the October 2025 press release next to the corrected 12.1 million figure; both worth a tidy in wp-admin. The Santander duplicate page (/car-finance-claims/santander-finance-claims-reclaim-redress-for-hidden-commission/) still needs a 301 to the main Santander page as listed in the redirect map.
+
 ## Open items for the team
 
 1. **Complete the noindex bulk action above** (wp-admin, Rank Math PRO bulk action).
