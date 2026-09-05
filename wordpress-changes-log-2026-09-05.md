@@ -119,6 +119,12 @@ Current guidance emphasises: E-E-A-T signals now gate competitive rankings, espe
 - Two zero use tags were deleted ("Payday Loan Claims Company", "Alliance of Claims Companies").
 - Noted for the team: post 35282 embeds its own &lt;style&gt; block that restyles the page body (max-width, margins). It should be moved into the theme or removed, as global CSS inside a post can distort the whole page template.
 
+### Fourth wave: sitewide blog internal linking sweep (live)
+
+49 further published posts now carry one or two contextual links to their matching claim hub, on top of the three done earlier, so 52 posts in total now feed authority to the commercial pages. Roughly 56 links were inserted. Targets used: /car-finance-claims/ (plus deep links to the Black Horse and Clydesdale lender pages), /vehicle-write-off-claim/ (plus the Admiral profile), /fraud-scam-form/fraud-scams-and-investments-shams/, /unaffordable-lending-claims/ (plus deep links to the payday, doorstep, high cost, catalogue, gambling borrowing, repeat loan, car finance and Moneybarn and Morses profile pages), the Amigo Scheme FAQ, /pension-claims/sipp-claims/, /about-us/ and /compliance/services-summary/.
+
+Method: each insertion anchored to exact existing text, so a phrase already inside a link cannot match, which prevented double linking (the "How to Challenge" guide was correctly skipped for already linking to the hub). Deliberately skipped: the formal CP25/27 consultation response, the DSAR explainer, the customer support notice, two opinion essays with no natural anchor, the second charge mortgages post (no mortgage hub exists) and the FSCS explainer. If a mortgage claims hub page is ever created, the second charge post should link to it.
+
 ## Open items for the team
 
 1. **Complete the noindex bulk action above** (wp-admin, Rank Math PRO bulk action).
