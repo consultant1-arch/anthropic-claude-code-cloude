@@ -60,8 +60,10 @@ The homepage and all 19 car finance commission lender pages were retitled to mat
 
 | Page | Old title | New title |
 |---|---|---|
-| Homepage (3397) | Allegiant \| A CMC | Car Finance, Unaffordable Lending &amp; Write Off Claims |
-| 19 lender pages under /car-finance-claims/ | "{Lender} &#8211; Claim Compensation for Undisclosed Commission Arrangements" | "{Lender} Commission Claims" or "{Lender} Car Finance Commission Claims" (Black Horse, Blue Motor, BMW FS, CA Auto, Clydesdale, Close Brothers, Ford Credit (FCE Bank), Hyundai Capital, Mercedes-Benz FS, Moneybarn, Northridge (NIIB), PSA, RCI, Santander, Startline, Toyota FS, Vauxhall, Volkswagen FS, MotoNovo) |
+| Homepage (3397) | Allegiant \| A CMC | Car Finance, Unaffordable Lending &amp; Write Off Claims \| Claims Management Company |
+| 19 lender pages under /car-finance-claims/ | "{Lender} &#8211; Claim Compensation for Undisclosed Commission Arrangements" | "{Lender} Commission Claims \| Claims Management Company" or "{Lender} Car Finance Commission Claims \| Claims Management Company" (Black Horse, Blue Motor, BMW FS, CA Auto, Clydesdale, Close Brothers, Ford Credit (FCE Bank), Hyundai Capital, Mercedes-Benz FS, Moneybarn, Northridge (NIIB), PSA, RCI, Santander, Startline, Toyota FS, Vauxhall, Volkswagen FS, MotoNovo) |
+
+Revised the same day at the owner's request: every rewritten title carries the spelled out "Claims Management Company" suffix so the firm's regulatory status is explicit in the title itself (CMCOB status disclosure, and avoiding any impression a lender named page belongs to the lender). The search phrase stays at the front of each title. Note for the team: the site name "Allegiant \| A CMC." is also appended to rendered browser titles by Rank Math, so titles currently disclose twice; if that reads as cluttered in search results, the site title in Settings, General could become simply "Allegiant" now that pages carry the disclosure themselves. That is a team decision, not made here.
 
 ### Taxonomy fixes (live)
 
