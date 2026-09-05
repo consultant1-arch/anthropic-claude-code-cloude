@@ -95,6 +95,12 @@ Redirect or noindex map for the rest (redirects via the installed Simple 301 Red
 
 Lender duplicates: keep both versions only where the affordability page and the commission page genuinely differ; the commission page under /car-finance-claims/ is canonical for commission searches. Cross link each pair. Merge and redirect the Moneybarn, BMW, Blue Motor and Startline affordability profiles into their commission pages only if the team confirms the affordability route is no longer marketed for those lenders.
 
+### Search snippet disclosure via excerpts (live)
+
+Rank Math's own description meta is not writable over the REST API (confirmed by a second ignored test write). To get the claims management company disclosure into the snippet Google shows, page excerpts were set on the homepage and all 19 lender pages. Rank Math's default description template for pages falls back to the excerpt when no custom description is set, so these should surface as the meta description on the next crawl. Pattern used: "Think {Lender} charged hidden commission on your car finance? Allegiant, an FCA authorised claims management company, can help you claim. No win, no fee." Homepage: "Allegiant is an FCA authorised claims management company. Check car finance commission, unaffordable lending and vehicle write off claims. No win, no fee."
+
+Team verification: check one page in Rank Math (wp-admin) to confirm no custom description overrides the excerpt, and after recrawl spot check a snippet in Google. If a custom Rank Math description already exists on any page, it wins over the excerpt and should be edited there instead. Google may still substitute its own snippet for some queries; the title disclosure covers those cases.
+
 ### Paste-ready meta descriptions (Rank Math, wp-admin)
 
 Homepage: "FCA regulated claims specialists. Check car finance commission, unaffordable lending and vehicle write off claims on a no win, no fee basis."
