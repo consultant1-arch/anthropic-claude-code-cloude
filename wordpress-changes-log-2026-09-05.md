@@ -52,6 +52,57 @@ Rank Math stores its robots directives in the `rank_math_robots` meta key, which
 | 6276 | /fraud-scam-declined/ | Application Declined |
 | 3194 | /bdetails/ | Details |
 
+## Second wave: ranking improvements (same day, approved by consultant1@allegiant.co.uk)
+
+### Title rewrites (live)
+
+The homepage and all 19 car finance commission lender pages were retitled to match real search language. Slugs and URLs are unchanged. Rank Math appends the site name to browser titles automatically, so no brand suffix was included.
+
+| Page | Old title | New title |
+|---|---|---|
+| Homepage (3397) | Allegiant \| A CMC | Car Finance, Unaffordable Lending &amp; Write Off Claims |
+| 19 lender pages under /car-finance-claims/ | "{Lender} &#8211; Claim Compensation for Undisclosed Commission Arrangements" | "{Lender} Commission Claims" or "{Lender} Car Finance Commission Claims" (Black Horse, Blue Motor, BMW FS, CA Auto, Clydesdale, Close Brothers, Ford Credit (FCE Bank), Hyundai Capital, Mercedes-Benz FS, Moneybarn, Northridge (NIIB), PSA, RCI, Santander, Startline, Toyota FS, Vauxhall, Volkswagen FS, MotoNovo) |
+
+### Taxonomy fixes (live)
+
+Created the category "News &amp; Views" (news-views) for opinion and commentary. Moved "Hard done by? A reality check for the lending industry" into it, and moved the two March 2026 redress explainers out of Press Releases into Car Finance Claims (Commission). Post URLs are date based, so nothing changed URL.
+
+### Alt text backfill (live)
+
+Descriptive alt text added to 15 editorial images: the Consumer Duty scams featured image, Hybrid Scams, both March redress images, the write off blog covers, both BBC coverage screenshots, both hero banners, the Car Analytics logos, the Allegiant white logo, the FCA logo, and the Trustpilot stars (which also had a typo, "starts").
+
+### New blog post (DRAFT, needs financial promotion sign off before publishing)
+
+Post 35458, "Car Finance Redress Scheme Suspended: What It Means for Your Claim", drafted in the house plain English voice. Covers the 2 July 2026 partial suspension, the December 2026 / February 2027 Upper Tribunal hearing, what is paused versus what continues, and the 31 August 2027 claim deadline. It states that consumers can complain to their lender directly for free. Facts sourced from FCA statements PS26/3 and "Motor finance scheme partially suspended" plus trade press. DO NOT publish without compliance sign off.
+
+### Write off consolidation decision (for the team to action)
+
+Canonical page: **/vehicle-write-off-claim/** (page 28568). It is the most recently maintained, sits in the main menu, and parents the insurer profiles.
+
+Redirect or noindex map for the rest (redirects via the installed Simple 301 Redirects plugin):
+
+| URL | Action |
+|---|---|
+| /write-off-claims/ | 301 to /vehicle-write-off-claim/ (duplicate intent) |
+| /vehicle-write-off-total-loss-claims/ | 301 to /vehicle-write-off-claim/ (duplicate intent) |
+| /unfair-vehicle-write-off-claims/ | 301 to /vehicle-write-off-claim/ (duplicate intent) |
+| /stolen-vehicle-write-off-claims-nw/ | Campaign lander: keep live but noindex |
+| /tdc/ | Campaign lander: keep live but noindex |
+| /caranalytics/ | Partner lander: keep live but noindex |
+| /wofc/ | Keep indexed (distinct fact check content) but link it prominently from the canonical page |
+
+Lender duplicates: keep both versions only where the affordability page and the commission page genuinely differ; the commission page under /car-finance-claims/ is canonical for commission searches. Cross link each pair. Merge and redirect the Moneybarn, BMW, Blue Motor and Startline affordability profiles into their commission pages only if the team confirms the affordability route is no longer marketed for those lenders.
+
+### Paste-ready meta descriptions (Rank Math, wp-admin)
+
+Homepage: "FCA regulated claims specialists. Check car finance commission, unaffordable lending and vehicle write off claims on a no win, no fee basis."
+
+Lender pages, pattern (replace {Lender}): "Think {Lender} charged hidden commission on your car finance? Check if you can claim under the FCA redress scheme. No win, no fee."
+
+### September 2026 SEO context applied
+
+Current guidance emphasises: E-E-A-T signals now gate competitive rankings, especially for finance (YMYL) content; almost all AI Overview citations come from pages already in the top 20, so traditional rankings remain the prerequisite; passage level quality and question format structure win citations; Core Web Vitals still separate sites. Actions for Allegiant beyond this session's changes: named author profiles with credentials on every post, visible "reviewed on" dates on regulated pages, FAQ schema via Rank Math on question heavy pages, and continued FOI based data journalism for links.
+
 ## Open items for the team
 
 1. **Complete the noindex bulk action above** (wp-admin, Rank Math PRO bulk action).
