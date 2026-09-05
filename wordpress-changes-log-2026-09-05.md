@@ -140,7 +140,12 @@ Unfair Commission page (/car-finance-claims/unfair-commission-claims-car-finance
 
 Further prudent alt text (18 images): MotoNovo, Black Horse commission and second charge mortgage images, the two accident scene photos on the DVLA post, the GDPR image on the DSAR post, two family images on lending pages, social icons (LinkedIn, X, Facebook x2, YouTube), Trustpilot logo and a second "4 starts" typo fix, and the two PCP icons that carried filename alts. Decorative icon sets were deliberately left with empty alt text, which is correct accessibility practice.
 
-Team notes: the hub page embeds an H1 in its body ("Car Finance Redress | Genuine No Win, No Fee*") which may duplicate the template H1, and footnote 2 on the hub still cites the October 2025 press release next to the corrected 12.1 million figure; both worth a tidy in wp-admin. The Santander duplicate page (/car-finance-claims/santander-finance-claims-reclaim-redress-for-hidden-commission/) still needs a 301 to the main Santander page as listed in the redirect map.
+Team notes: footnote 2 on the hub still cites the October 2025 press release next to the corrected 12.1 million figure; worth a tidy in wp-admin.
+
+### Sixth wave: H1 fix and Santander duplicate neutralised (live)
+
+- The commission hub's embedded body H1 was demoted to an H2. The write off hub uses the same template (sectors.php) and carries no body H1, confirming the template renders the page title as the H1, so the embedded one was a duplicate.
+- The Santander duplicate page (/car-finance-claims/santander-finance-claims-reclaim-redress-for-hidden-commission/) was found to be a paid landing page frozen in early 2025: it still described the FCA investigation as ongoing, referenced the April 2025 Supreme Court hearing as pending and the December 2025 complaint pause as current, cited three competitor claims firms' websites as references, made aggressive claims ("maximum compensation potential", "nothing to lose and thousands to gain"), and used an FCA register link with a different firm ID (0010X00004MND0QQAX) from the one used elsewhere on the site (0010X00004QBAvNQAX). Its content was replaced with a short, current, compliant notice pointing to the canonical Santander page and the fees page, and it was retitled "Santander Car Finance Claims Update" so it no longer competes for the same searches. TEAM ACTIONS: (1) still add the 301 to /car-finance-claims/santander-claims/ in Simple 301 Redirects, which remains the clean fix; (2) check whether any paid campaigns point at this URL and repoint them at the canonical page; (3) verify which FCA register firm ID is correct for Allegiant and correct the wrong one wherever it appears.
 
 ## Open items for the team
 
