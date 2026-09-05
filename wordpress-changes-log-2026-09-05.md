@@ -111,6 +111,14 @@ Lender pages, pattern (replace {Lender}): "Think {Lender} charged hidden commiss
 
 Current guidance emphasises: E-E-A-T signals now gate competitive rankings, especially for finance (YMYL) content; almost all AI Overview citations come from pages already in the top 20, so traditional rankings remain the prerequisite; passage level quality and question format structure win citations; Core Web Vitals still separate sites. Actions for Allegiant beyond this session's changes: named author profiles with credentials on every post, visible "reviewed on" dates on regulated pages, FAQ schema via Rank Math on question heavy pages, and continued FOI based data journalism for links.
 
+### Third wave: internal linking and content accuracy (live)
+
+- The March 2026 "Final Rules" redress explainer (post 35282) had no internal links to any commercial page. Two contextual links to /car-finance-claims/ were added.
+- The December 2025 "Car Finance Compensation: Your Questions Answered" post (35126) still presented the scheme as a proposal, quoting the superseded &pound;700 average, 14.2 million agreements and 35% threshold, and predated the July suspension. A dated update box now sits at the top correcting those figures and linking to the final rules explainer, and an unaffordable lending hub link was added. A fuller rewrite is recommended when convenient.
+- The June 2026 write off post (35388) also had no internal links; two contextual links to /vehicle-write-off-claim/ were added.
+- Two zero use tags were deleted ("Payday Loan Claims Company", "Alliance of Claims Companies").
+- Noted for the team: post 35282 embeds its own &lt;style&gt; block that restyles the page body (max-width, margins). It should be moved into the theme or removed, as global CSS inside a post can distort the whole page template.
+
 ## Open items for the team
 
 1. **Complete the noindex bulk action above** (wp-admin, Rank Math PRO bulk action).
