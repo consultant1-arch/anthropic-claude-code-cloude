@@ -147,9 +147,29 @@ Team notes: footnote 2 on the hub still cites the October 2025 press release nex
 - The commission hub's embedded body H1 was demoted to an H2. The write off hub uses the same template (sectors.php) and carries no body H1, confirming the template renders the page title as the H1, so the embedded one was a duplicate.
 - The Santander duplicate page (/car-finance-claims/santander-finance-claims-reclaim-redress-for-hidden-commission/) was found to be a paid landing page frozen in early 2025: it still described the FCA investigation as ongoing, referenced the April 2025 Supreme Court hearing as pending and the December 2025 complaint pause as current, cited three competitor claims firms' websites as references, made aggressive claims ("maximum compensation potential", "nothing to lose and thousands to gain"), and used an FCA register link with a different firm ID (0010X00004MND0QQAX) from the one used elsewhere on the site (0010X00004QBAvNQAX). Its content was replaced with a short, current, compliant notice pointing to the canonical Santander page and the fees page, and it was retitled "Santander Car Finance Claims Update" so it no longer competes for the same searches. TEAM ACTIONS: (1) still add the 301 to /car-finance-claims/santander-claims/ in Simple 301 Redirects, which remains the clean fix; (2) check whether any paid campaigns point at this URL and repoint them at the canonical page; (3) verify which FCA register firm ID is correct for Allegiant and correct the wrong one wherever it appears.
 
+### Seventh wave: FCA register links keyed to the footer FRN (live)
+
+The firm confirmed the authoritative FRN is the one shown in the site footer, 836810. The two remaining FCA register links on the site used a Salesforce record ID rather than the FRN, and the FCA website cannot be reached from this environment to verify record IDs, so both were repointed to the durable FRN keyed register search URL (https://register.fca.org.uk/s/search?q=836810&type=Companies). That URL always resolves to the firm bearing the footer FRN whatever the register's internal record IDs are, and it survives FCA platform changes better than record ID links have.
+
+- Post 24832 ("Who are Allegiant? 5 ways to find out"): the link appeared twice (href and visible text) and both were updated.
+- Post 1119 ("Allegiant Finance Services: Full FCA Authorisation Granted", January 2020): this one still used the pre 2019 register URL format (register.fca.org.uk/ShPo_FirmDetailsPage?id=...), which the FCA retired when the register moved to its current platform. The href was updated. The visible link text "https://register.fca.org.uk" was left unchanged and remains accurate.
+
+The second record ID found during the review (0010X00004MND0QQAX, on the old Santander lander only) already has zero live occurrences after that page's content was replaced, so team action (3) from the sixth wave is now closed. No page or post on the site links to the register by record ID any more.
+
+### Open item: Cookiebot badge overlaps the sticky bottom bar on mobile
+
+On mobile the Cookiebot consent renewal badge sits bottom left and covers the sticky bottom bar's text, which also makes the call to action button look pushed to the left. This is a theme level clash that predates this session's work (no change made in this session touches the bar, the badge or any CSS) and it cannot be fixed over the REST API. Two fixes, either works:
+
+1. In the Cookiebot dashboard, move the widget to the bottom right corner, or hide the badge entirely and rely on the existing footer link for renewing consent.
+2. Add CSS via the theme or a WPCode snippet: `#CookiebotWidget { left: auto !important; right: 12px !important; }`. If the badge then sits over the bar's button on small screens, also give the bar some right padding at mobile widths.
+
+Keep the renew consent route reachable whichever fix is used, since PECR requires withdrawing consent to be as easy as giving it.
+
 ## Open items for the team
 
 1. **Complete the noindex bulk action above** (wp-admin, Rank Math PRO bulk action).
 2. **Decide on /make-payment/**: it runs the stripe-custom-3d payment template with no page content. If the URL is no longer referenced in customer emails, invoices or the CRM, trash it; /pay/ appears to be the current payment page. If it is still referenced, keep it and rely on the noindex.
 3. **Decide on the "Easy for Everyone" draft** (page 35238): publish with real content or delete the draft.
 4. After the noindex pass, spot check two or three of the pages in a browser: view source and confirm the robots meta tag says noindex.
+5. **Fix the Cookiebot badge overlap** on the mobile sticky bottom bar (see the open item section above).
+6. **Spot check the two repointed register links** (posts 24832 and 1119) in a browser and confirm the FRN search lands on Allegiant Finance Services Ltd, FRN 836810.
