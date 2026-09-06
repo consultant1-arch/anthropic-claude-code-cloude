@@ -174,6 +174,24 @@ On mobile the Cookiebot consent renewal badge sits bottom left and covers the st
 
 Keep the renew consent route reachable whichever fix is used, since PECR requires withdrawing consent to be as easy as giving it.
 
+### Eighth wave, 6 September 2026: accuracy sweep, lender pair cross links, profile titles, orphan links (live)
+
+**Accuracy sweep of redress content.** Four posts still carried pre scheme facts and were corrected with a dated September 2026 update box (the house pattern from post 35126) plus surgical inline fixes:
+- Post 33307 (Black Horse guide): "pause until at least 4 December 2025" corrected to the confirmed scheme and tribunal suspension; the "claim before the pause lifts" call to action now cites the 31 August 2027 deadline; title year updated from 2025 to 2026.
+- Post 33813 (Supreme Court explainer): the DCA pause reference, "working on a compensation scheme", "announcement still to come" and "wait for the FCA announcement" all corrected to the confirmed scheme and suspension.
+- Post 28024 (Two types of commission claims): "is consulting" corrected to confirmed on 30 March 2026; the FCA quote reframed as a 2025 announcement; the "began to question" passage updated to reflect the confirmed scheme and tribunal challenge.
+- Post 35268 (March explainer): published with a "DRAFT FOR REVIEW, REMOVE THIS LINE BEFORE PUBLISHING" comment still in the source, now removed. All consultation stage figures corrected: 14.2 million to 12.1 million, &pound;700 to &pound;830 (twice), 35% threshold to 39%, "expected to publish final rules" and both launch timing passages now reflect PS26/3 and the 2 July suspension, and the disclaimer notes the rules were published after writing. Remaining &pound;700 or 14.2 million mentions sitewide are either inside corrective text or unrelated (checked).
+
+**Lender pair cross links (cannibalisation fix).** The five lenders with both an affordability profile and a commission page now cross link in both directions with intent differentiating anchors: Moneybarn (7507 and 33658), BMW Financial Services (13328 and 33620), Blue Motor Finance (13333 and 33613), Startline (13346 and 33672), Santander (22894 and 33669). Ten links in total.
+
+**Unaffordable claim profile titles and excerpts.** All 41 live profiles under /unaffordable-claim-profiles/ were retitled from bare names ("Peachy", "Opus", "Halifax") to search language plus the regulatory suffix, pattern "{Lender} Unaffordable Lending/Loan/Car Finance/Guarantor Loan Claims | Claims Management Company", and each was given an excerpt carrying the FCA authorised claims management company disclosure. Wording deliberately says "can check whether you have a claim" rather than promising recovery, since several lenders are in administration. Skipped: page 212 (legacy Quickquid.co.uk and PoundstoPocket page, pending the team's merge decision with page 22887).
+
+**Write off cluster and fees.** Canonical hub 28568 retitled to "Vehicle Write Off Claims (Undervalued Payouts) | Claims Management Company" with a disclosure excerpt. The competing landers were NOT retitled because they are being 301 redirected or noindexed by the team (see the grokbot handoff below). /our-fees/ retitled from "No Cash, No Fee." to "Our Fees: No Win, No Fee Explained | Claims Management Company" with an excerpt stating the 18% to 36% fee range.
+
+**Orphan page links.** The commission hub now links /pcp-claims/ (previously orphaned), and the write off hub now links /wofc/ (per the consolidation decision) and /insurance-claim-fees/. The /pcp-commission-claimspack/ page was left for a team decision on whether it is a conversion asset that should be noindexed instead.
+
+**Handoff.** The wp-admin only work (noindex, 301 redirects, Cookiebot fix, timezone and comment defaults, Search Console) was packaged as `grokbot-handoff-2026-09-06.md` for execution by the owner's other agent, with a report template. Claude will verify the report against the live site when it comes back.
+
 ## Open items for the team
 
 1. **Complete the noindex bulk action above** (wp-admin, Rank Math PRO bulk action).
