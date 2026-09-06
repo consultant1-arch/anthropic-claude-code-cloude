@@ -52,6 +52,15 @@ Rank Math stores its robots directives in the `rank_math_robots` meta key, which
 | 6276 | /fraud-scam-declined/ | Application Declined |
 | 3194 | /bdetails/ | Details |
 
+### Audit result (6 September 2026): all 28 confirmed indexable, and the reason found
+
+A write of `rank_math_robots` was re-tested on 6 September and the API ignored it again, so the bulk action above stands as the fix. The Rank Math robots meta was then read for every page in the table (readable in edit context even though not writable). Findings:
+
+- **None of the 28 carries a Rank Math noindex.** Every page is either explicitly empty (falls back to the sitewide default, index) or has no robots meta at all. The one partial exception is /instalments/ (2722), which carries nofollow only.
+- **The intent to noindex existed and was lost in the Yoast to Rank Math migration.** /make-payment/ (2545) and /opt-out/ (282) still hold orphaned Yoast noindex flags (`_yoast_wpseo_meta-robots-noindex = 1`) that Rank Math never imported and no longer act on. /instalments/ and /pension-form-thank-you/ (3098) hold Yoast nofollow flags, of which only the first was imported. So these journey pages were noindexed years ago and the protection silently fell away when the SEO plugin changed. Worth checking whether anything else was lost in that migration (Rank Math has a re-run importer under Tools).
+- Three of the thank you and confirmation pages (23524, 25948, 28165) have custom Rank Math meta descriptions, so someone has actively done SEO on pages that should not be in Google at all. The bulk noindex does not remove descriptions and nothing further is needed there.
+- Write off landers from the consolidation map: /stolen-vehicle-write-off-claims-nw/ is page 27433 and /caranalytics/ is page 35069, both on dedicated landing page templates. Their ACF meta is too large for the API to page through to the robots key, and /tdc/ has no searchable text content (ACF built), so check and noindex those three in the same wp-admin pass (in the admin Pages list, searching "tdc" matches the slug).
+
 ## Second wave: ranking improvements (same day, approved by consultant1@allegiant.co.uk)
 
 ### Title rewrites (live)
