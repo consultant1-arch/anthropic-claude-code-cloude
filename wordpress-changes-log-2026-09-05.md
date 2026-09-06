@@ -73,7 +73,7 @@ Created the category "News &amp; Views" (news-views) for opinion and commentary.
 
 Descriptive alt text added to 15 editorial images: the Consumer Duty scams featured image, Hybrid Scams, both March redress images, the write off blog covers, both BBC coverage screenshots, both hero banners, the Car Analytics logos, the Allegiant white logo, the FCA logo, and the Trustpilot stars (which also had a typo, "starts").
 
-### New blog post (DRAFT, needs financial promotion sign off before publishing)
+### New blog post (PUBLISHED 6 September 2026 on the owner's instruction, comments and pings closed; live at /2026/09/car-finance-redress-scheme-suspended/)
 
 Post 35458, "Car Finance Redress Scheme Suspended: What It Means for Your Claim", drafted in the house plain English voice. Covers the 2 July 2026 partial suspension, the December 2026 / February 2027 Upper Tribunal hearing, what is paused versus what continues, and the 31 August 2027 claim deadline. It states that consumers can complain to their lender directly for free. Facts sourced from FCA statements PS26/3 and "Motor finance scheme partially suspended" plus trade press. DO NOT publish without compliance sign off.
 
