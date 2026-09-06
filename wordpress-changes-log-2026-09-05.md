@@ -192,6 +192,12 @@ Keep the renew consent route reachable whichever fix is used, since PECR require
 
 **Handoff.** The wp-admin only work (noindex, 301 redirects, Cookiebot fix, timezone and comment defaults, Search Console) was packaged as `grokbot-handoff-2026-09-06.md` for execution by the owner's other agent, with a report template. Claude will verify the report against the live site when it comes back.
 
+### Ninth wave, 6 September 2026: next redress post drafted, tag estate pruned
+
+**New draft post awaiting sign off (NOT published).** Post 35653, "Car Finance Redress: What To Do if Your Lender Says You Are Not Owed Anything", written for the next scheme milestone: lenders must send "not owed" decisions by 18 November 2026 (post April 2014 agreements complained about by 30 June 2026) or 18 January 2027 (older agreements complained about by 31 August 2026). It explains that the tribunal suspension paused payouts but not "not owed" decisions, tells readers a rejection can be challenged at FOS for free, restates the 31 August 2027 claim deadline and carries the CMC and fee disclosures. Saved as draft with comments and pings closed; publish only after compliance sign off.
+
+**Tag estate pruned from 72 to 28.** All remaining tags are meaningful and most have multiple posts. Merges done first so no post was orphaned: post 24832 gained the Allegiant tag before its two one-off tags ("who are allegiant", "Allegiant legit?") were removed, and the "unaffordable" and "mis-sale" singles were absorbed by the existing "unaffordable lending" tag on post 27986. 44 tags deleted in total, including a cluster of 13 machine generated single-use tags on the DSAR article (DSAR and Data Protection were kept), the "Write Off" tag whose slug collided with the write-off category, defunct brand singles (paydayuk, moneyshop, paydayexpress) and generic singles (loan, loans, bank, help, online, payments, compensation, delays and similar). Kept deliberately despite single use: gambling, mental health, self employed, voluntary termination, settlement offer, time limits, Morses. Tag deletion is irreversible but harmless to posts; a tag can simply be recreated if a topic returns.
+
 ## Open items for the team
 
 1. **Complete the noindex bulk action above** (wp-admin, Rank Math PRO bulk action).
