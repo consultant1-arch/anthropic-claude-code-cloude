@@ -41,7 +41,7 @@ Deliverable: the input file annotated with a status per URL, plus a shortlist of
 | Banner scam claims link | `https://allegiant.co.uk/fraud-scams-and-investments-shams/` | `https://allegiant.co.uk/fraud-scam-form/fraud-scams-and-investments-shams/` |
 | Banner write off link | `https://allegiant.co.uk/under-valued-vehicle-write-off-claims/` | `https://allegiant.co.uk/vehicle-write-off-claim/` |
 | Card: DCA sub link | `.../car-finance-commission-claims-are-you-owed-compensation-for-hidden-commissions/dca-claims-do-you-have-a-discretionary-commission-arrangement-claim/` | `https://allegiant.co.uk/car-finance-claims/dca-claims-do-you-have-a-discretionary-commission-arrangement-claim/` |
-| Card: non-discretionary sub link | `.../non-discretionary-car-finance-commission-claims-were-you-fully-informed/` | AWAIT RIC'S DECISION (page no longer exists; do not guess) |
+| Card: non-discretionary sub link | `.../non-discretionary-car-finance-commission-claims-were-you-fully-informed/` | `https://allegiant.co.uk/car-finance-claims/non-discretionary-car-finance-commission-claims-were-you-fully-informed/` (DECIDED: Ric chose to recreate the page; Claude has drafted it as unpublished page 35684 at this exact URL. Make this homepage change only AFTER Ric publishes the draft; until then leave the sub link as is) |
 | Video button | `https://allegiant.co.ukabout-us/` | `https://allegiant.co.uk/about-us/` |
 | Trustpilot image (home_banner_trustpilot_code) | `https://allegiant.co.ukwp-content/themes/allegiant-theme/images/home/hero/trustscore.svg` | insert the missing slash after .uk |
 

@@ -237,3 +237,11 @@ No site changes were made in this wave; it was a read only audit. Full findings 
 **Observed grokbot progress (not Claude changes):** pension pages binned (published pages 360 to 207), slugs 7688-2 and 13319-2 renamed to capital-one and tesco-bank, homepage and About Us modified evening of 6 September.
 
 **Open for Ric:** non-discretionary link target; scamclaim alias confirmation; FAQ page publish or remove; API fix batch go ahead (about 15 content fixes Claude can apply once approved).
+
+### Eleventh wave addendum: non-discretionary commission page recreated as a draft (7 September 2026)
+
+Ric decided to recreate the missing page rather than repoint the 21 broken links. Claude drafted it as **unpublished draft page 35684** with the exact original slug and parent, so on publish the URL becomes /car-finance-claims/non-discretionary-car-finance-commission-claims-were-you-fully-informed/ and all 20 lender page links plus the homepage sub link (once grokbot applies the ACF fix) start working with no link edits anywhere.
+
+Copy is in `draft-non-dca-page-2026-09-07.md`. Facts verified same day: PS26/3 high commission thresholds (39% of total cost of credit AND 10% of amount borrowed, raised from the proposed 35%), de minimis £120 pre April 2014 / £150 after, agreement window 6 April 2007 to 1 November 2024, about £830 average redress, partial suspension since 2 July 2026 with the Upper Tribunal hearing due 14 to 18 December 2026 or 16 to 26 February 2027. CMCOB content included: free direct route to lender and FOS stated prominently, no win no fee with the 18% to 36% inclusive of VAT range and a link to /commission-claim-fees/, FCA regulated statement with FRN 836810.
+
+**Awaiting Ric:** publish sign off for draft 35684 (as with draft post 35653, nothing publishes without it). After publish: grokbot applies the homepage ACF sub link fix, and Rank Math meta description can be set in wp-admin (the excerpt fallback already carries the right text).
