@@ -210,3 +210,30 @@ The owner confirmed the pension claims line is in run off and instructed deletio
 4. After the noindex pass, spot check two or three of the pages in a browser: view source and confirm the robots meta tag says noindex.
 5. **Fix the Cookiebot badge overlap** on the mobile sticky bottom bar (see the open item section above).
 6. **Spot check the two repointed register links** (posts 24832 and 1119) in a browser and confirm the FRN search lands on Allegiant Finance Services Ltd, FRN 836810.
+
+---
+
+## Eleventh wave: sitewide link audit (7 September 2026), read only
+
+**Requested by:** consultant1@allegiant.co.uk ("Please review all links on our site (internal and external linking) to ensure none are broken")
+
+No site changes were made in this wave; it was a read only audit. Full findings in `link-audit-2026-09-07.md`, external verification and wp-admin fix brief in `grokbot-link-verification-2026-09-07.md`, external URL list in `link-audit-external-urls-2026-09-07.txt`.
+
+**Coverage:** all 207 published pages and 80 published posts read in full over the API (zero fetch errors), 7 menus, tags and categories; internal links validated against the live inventory; 397 unique third party URLs plus 28 own infrastructure URLs packaged for grokbot HTTP verification (this environment cannot reach external hosts).
+
+**Headline findings:**
+1. All 20 car finance commission lender pages plus the homepage link to a non-discretionary commission page that no longer exists in any status (hard 404 across the main commercial cluster). Target decision parked with Ric.
+2. Six broken or malformed links on the homepage ACF fields alone.
+3. Terms of Engagement index links two regulatory documents at wrong slugs (fraud/scam and insurance ToE).
+4. Old /legal/* links on four compliance pages.
+5. Top menu FAQ item points at a private page (404 for visitors); Top menu Home points at the 2017 front page.
+6. Missing slash URL family (allegiant.co.ukapply-online and similar) on 7 items; typo domains quickquid.couk and financial-ombudsman.org; trailing dot register.fca.org.uk. links on three Pre Contract Information documents; malformed helpdesk mailto (allegiant-financeco.uk) on two legal pages.
+7. Fraud claim thank you page mailto sends to pensions@allegiant-finance.co.uk while displaying scamclaim@allegiant.co.uk.
+8. Fee disclosure cross links swapped on 25936 and 32933 (CMCOB accuracy).
+9. Published page /qbo-callback/ redirects to http://localhost:3000/callback (developer artefact); /service/ is published lorem ipsum.
+10. Privacy Policy carries three Outlook safelinks wrappers embedding a staff email address.
+11. Pension deletion verified as an audit side effect: estate gone except page 3793 (SSP Claims, now at /ssp-claims/) and post 4252, both re-briefed to grokbot. Only one content link into the deleted estate remains (inside post 4252 itself).
+
+**Observed grokbot progress (not Claude changes):** pension pages binned (published pages 360 to 207), slugs 7688-2 and 13319-2 renamed to capital-one and tesco-bank, homepage and About Us modified evening of 6 September.
+
+**Open for Ric:** non-discretionary link target; scamclaim alias confirmation; FAQ page publish or remove; API fix batch go ahead (about 15 content fixes Claude can apply once approved).
